@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
-import Home from '../page/Home';
 
-function Login() {
+function Loginpage() {
   const [username,setUsername] = useState("");
   const[ password, setPassword] = useState("");
   const[valid,setValid]= useState(false);
@@ -13,8 +12,9 @@ function Login() {
 
   }
   
+
   return (
-    valid ? <Home /> :
+    {
 
     <div>
       <form>
@@ -27,8 +27,8 @@ function Login() {
         <button onClick={handleSubmit}>submit</button>
       </form>
     </div>
-  
+    }
   )
 }
 
-export default Login 
+export default Loginpage
